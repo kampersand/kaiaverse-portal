@@ -175,6 +175,14 @@
     },
     "visitResource": "访问资源"
   },
+  "wallet": {
+    "connect": "连接钱包",
+    "connecting": "连接中...",
+    "connected": "已连接",
+    "disconnect": "断开连接",
+    "wrongNetwork": "错误的网络",
+    "switchToKaia": "切换到 Kaia"
+  },
   "common": {
     "language": "语言",
     "loading": "加载中...",
