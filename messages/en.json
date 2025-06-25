@@ -175,6 +175,14 @@
     },
     "visitResource": "Visit Resource"
   },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "disconnect": "Disconnect",
+    "wrongNetwork": "Wrong Network",
+    "switchToKaia": "Switch to Kaia"
+  },
   "common": {
     "language": "Language",
     "loading": "Loading...",

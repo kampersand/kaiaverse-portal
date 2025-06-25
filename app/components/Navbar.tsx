@@ -1,7 +1,10 @@
+'use client';
+
 import {Link} from '../../i18n/routing';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
+import ConnectWalletButton from './ConnectWalletButton';
 
 const Navbar = () => {
   const t = useTranslations('nav');
@@ -40,7 +43,10 @@ const Navbar = () => {
                 {t('resources')}
               </Link>
             </div>
-            <LanguageSwitcher />
+            <div className="flex items-center space-x-4">
+              <LanguageSwitcher />
+              <ConnectWalletButton />
+            </div>
           </div>
         </div>
       </div>

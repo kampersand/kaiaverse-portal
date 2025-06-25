@@ -47,7 +47,7 @@ async function syncMarketData(): Promise<unknown> {
   const lastSync = await redis.get(MARKET_LAST_SYNC_KEY);
   if (lastSync) {
     const timeSinceLastSync = Date.now() - parseInt(lastSync);
-    const minSyncInterval = 5 * 60 * 1000; // 5分钟最小同步间隔
+    const minSyncInterval = 1 * 60 * 1000; // 1分钟最小同步间隔
     if (timeSinceLastSync < minSyncInterval) {
       throw new Error(
         `同步过于频繁，请在 ${new Date(
